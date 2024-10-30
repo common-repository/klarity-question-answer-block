@@ -1,0 +1,76 @@
+.text-left {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.question-answer-container {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+  margin-top: 1.5rem !important;
+
+  .question-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    p {
+      font-size: 18px;
+      margin: .75em 1em .75em 1em;
+      flex: 10 0 0;
+    }
+    .chevron-container{
+      width: 18px;
+      height: 10px;
+      margin: 0;
+      flex: 1 0 0;
+      background-color: black;
+    }
+    .chevron-up {
+      -webkit-mask: url('/wp-content/plugins/klarity-question-answer-block/images/chevron-up.svg') no-repeat;
+      mask: url('/wp-content/plugins/klarity-question-answer-block/images/chevron-up.svg') no-repeat;
+    }
+    .chevron-down {
+      -webkit-mask: url('/wp-content/plugins/klarity-question-answer-block/images/chevron-down.svg') no-repeat;
+      mask: url('/wp-content/plugins/klarity-question-answer-block/images/chevron-down.svg') no-repeat;
+    }
+  }
+  .answer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    p {
+      font-size: 14px;
+      margin: 1em;
+      flex: 10 0 0;
+    }
+    .empty-div {
+      flex: 1 0 0;
+      height: 0;
+    }
+  }
+  .collapsed {
+    p {
+      margin: 0 1em 0 1em !important;
+      line-height: 0;
+      opacity: 0;
+
+      -webkit-transition: all 0.25s ease;
+      -moz-transition: all 0.25s ease;
+      -o-transition: all 0.25s ease;
+      transition: all 0.25s ease;
+    }
+  }
+  .expanded {
+    p {
+      margin: 1em !important;
+      line-height: inherit;
+      opacity: inherit;
+
+      -webkit-transition: all 0.25s ease;
+      -moz-transition: all 0.25s ease;
+      -o-transition: all 0.25s ease;
+      transition: all 0.25s ease;
+    }
+  }
+}
